@@ -1,0 +1,22 @@
+body {
+    margin: 10px;
+    
+}
+
+h1, h2, h3, h4, p{
+    margin: 30px;
+}
+
+footer {
+    text-align: center;
+}
+.info {
+    float: right;
+    padding: 30px;
+}
+.img_flex{
+    display: inline;
+    justify-content: space-between;
+    width: auto;
+    padding: 45px;
+}
