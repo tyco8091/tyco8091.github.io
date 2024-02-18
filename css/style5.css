@@ -1,0 +1,81 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+}
+  
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+}
+ 
+/* ALREADY GIVEN RULESETS matched up to their correct selectors */
+
+.card{
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+}
+  
+.card header{
+    background-image: linear-gradient(to top,rgba(0,0,0,0), rgba(0,0,0,0.2));
+    border-radius: 1.5em 1.5em 0 0;
+}
+
+.card footer{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.2), rgba(0,0,0,0));
+    border-radius: 0 0 1.5em 1.5e;
+}
+  
+.card article img{
+    max-height: 100%;
+    float: right;
+}
+
+/* NEW RULESETS besides the one Anthony gave us to start with */
+
+/* New rulesets that target the header and footer, giving them a height and padding on all sides */
+.card header, .card footer{
+    height: 3.125em;
+    padding: 1em;
+}
+
+/* Adjusting margins of h2 and p */ 
+h2, p{
+    margin: 0;
+}
+
+/* Setting the height and bg color of the article */ 
+article{
+    height: 12em;
+    background-color: rgba(0,0,0,0.35);
+}
+
+/* Updating the Chris Mills font size and height */ 
+h2{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+/* Setting the font size of the footer and article p */ 
+p{
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+/* You don't need this specific ruleset, but I added it in for the footer p to be centered. */
+footer p{
+    line-height: 2.1em;
+}
+
+/* Changing the padding, sizing, and color of the article info. */
+.card article p{
+    color: rgba(255,255,255,.75); /*lighter white shade.*/
+    font-size: 0.938em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
