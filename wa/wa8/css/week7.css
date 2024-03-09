@@ -1,0 +1,162 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: background-color 1s, margin-left 4s, padding 1s;
+}
+nav a:hover{
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(130, 130, 130);
+}
+
+@font-face {
+    font-family: 'old_londonregular';
+    src: url('/wa/wa8/font/webfontkit-20240307-164524/oldlondon-webfont.woff2') format('woff2'),
+         url('/wa/wa8/font/webfontkit-20240307-164524/oldlondon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'old_londonregular', Arial, sans-serif;
+}
+
+
+img{
+    width:  40vw;
+    height: 50vh;
+}
+
+#black-ball{
+    background-color: rgb(0, 0, 0);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: ballMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#grey-ball{
+    background-color: rgb(130, 129, 129);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: ball2Move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#darkgrey-ball{
+    background-color: rgb(65, 65, 65);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+    animation-name: ball3Move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ballMove{
+    from{
+        margin: 0%;
+    }
+
+    25%{
+        margin-left: 90%;
+        margin-top: 0%;
+    }
+
+    50%{
+        margin-left: 90%;
+        margin-top: 40%;
+    }
+
+    75%{
+        margin-left: 0%;
+        margin-top: 40%;
+    }
+
+    to{
+        margin: 0%;
+    }
+}
+
+@keyframes ball2Move{
+    from{
+        margin: 0%;
+    }
+
+    25%{
+        margin-left: 80%;
+        margin-top: 0%;
+    }
+
+    50%{
+        margin-left: 80%;
+        margin-top: 36%;
+    }
+
+    75%{
+        margin-left: 0%;
+        margin-top: 36%;
+    }
+
+    to{
+        margin: 0%;
+    }
+}
+
+@keyframes ball3Move{
+    from{
+        margin: 0%;
+    }
+
+    25%{
+        margin-left: 85%;
+        margin-top: 0%;
+    }
+
+    50%{
+        margin-left: 85%;
+        margin-top: 38%;
+    }
+
+    75%{
+        margin-left: 0%;
+        margin-top: 38%;
+    }
+
+    to{
+        margin: 0%;
+    }
+}
