@@ -20,7 +20,7 @@ main.concert-schedule {
 }
 
 .card {
-    flex: 0 0 40%;
+    flex: 0 0 30%;
     margin: 10px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,6 +41,10 @@ main.concert-schedule {
     padding: 15px;
 }
 
+.card-details p{
+    line-height: 1.5;
+}
+
 footer {
     text-align: center;
     padding: 1em;
@@ -59,4 +63,16 @@ footer {
     font-size: 20px;
     line-height: 1.5;
     color: #333;
+}
+
+@media screen and (max-width: 400px) {
+    .intro {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .card {
+        flex: 0 0 90%;
+    }
 }
