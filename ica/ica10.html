@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ICA10</title>
+    <script src="week10.js" defer></script> 
+    <!-- <script src="week10.js" async></script>  -->
+    <style>
+        #button1{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: red;
+            color: black;
+            box-shadow: 1px 1px 2px rgb(0, 0, 1);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            width: 500px;
+            height: 400px;
+            font-size: 100px;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <button type="button" id="button1">Don't Press Me!</button>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <h1>This is some text</h1>
+    <button type="button" id="myButton">Press Me!</button>
+  </body>
+</html>
