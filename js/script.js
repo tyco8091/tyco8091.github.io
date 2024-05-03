@@ -6,6 +6,7 @@ const volumeDisplay = document.querySelector("#volumeDisplay");
 const clickCounter = document.querySelector("#clickCounter");
 const progressBar = document.querySelector("#progressBar");
 const congratsMessage = document.querySelector("#congratsMessage");
+const congratsAudio = document.querySelector("#congratsAudio");
 const shapes = document.querySelectorAll(".shape");
 
 const colorStages = [
@@ -33,7 +34,7 @@ const updateProgressBar = () => {
 // update volume and click counter
 const updateDisplay = () => {
     volumeDisplay.textContent = `Volume: ${volume}%`;
-    clickCounter.textContent = `Clicks: ${clickCount}/100`;
+    clickCounter.textContent = `Clicks: ${clickCount}/50`;
     volumeDisplay.style.backgroundColor = colorStages[colorStage]; 
     updateProgressBar(); 
 };
@@ -41,9 +42,9 @@ const updateDisplay = () => {
 // increase volume and reset click count
 const increaseVolume = () => {
     clickCount++; 
-    if (clickCount >= 100) { 
+    if (clickCount >= 50) { 
         if (volume < 100) { 
-            volume += 5; 
+            volume += 20; 
             colorStage = (colorStage + 1) % colorStages.length; 
             shapeStage = (shapeStage + 1) % shapeStages.length; 
         }
@@ -52,6 +53,7 @@ const increaseVolume = () => {
     updateDisplay();
     if (volume >= 100) {
         congratsMessage.style.display = "block"; 
+        congratsAudio.play();
     }
 };
 

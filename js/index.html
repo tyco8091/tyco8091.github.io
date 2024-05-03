@@ -9,7 +9,7 @@
     <div class="volume-display" id="volumeDisplay">Volume: 0%</div> 
 
     <div>
-        <span class="click-counter" id="clickCounter">Clicks: 0/100</span>
+        <span class="click-counter" id="clickCounter">Clicks: 0/50</span>
     </div>
 
     <div class="progress-bar-container">
@@ -28,9 +28,14 @@
         </script>
     </div>
     <div class="congrats-message" id="congratsMessage">
-        Congratulations! Enjoy the loud sound!
+        Congratulations! Enjoy the loud music!
         <br>
         <img src="img/g59.gif" alt="G59"> 
+        <audio id="congratsAudio" src="./audio/$UICIDEBOY$ - ARE YOU GOING TO SEE THE ROSE IN THE VASE, OR THE DUST ON THE TABLE_ (Lyric Video).mp3" preload="auto"></audio>
+    </div>
+    <div class="description-box">
+        Click the shapes to increase the volume. It takes 50 clicks to increase the volume by 20%. 
+        Your goal is to reach 100% volume and trigger the "Congratulations" message. Good luck!
     </div>
     <script src="script.js"></script>
 </body>

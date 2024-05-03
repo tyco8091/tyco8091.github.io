@@ -68,11 +68,12 @@ body {
 .click-counter {
     text-align: center;
     font-size: 2em;
-    padding: 10px;
+    padding: 15px;
     color: white;
     background-color: #555;
     border-radius: 5px;
     display: inline-block; 
+    margin-bottom: 20px;
 }
 
 
@@ -108,21 +109,33 @@ body {
     margin-top: 10px;
 }
 
-/* Phone screen */
+.description-box {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
 @media (max-width: 600px) {
     .shape-container {
         grid-template-columns: repeat(5, 1fr); 
+        grid-template-rows: repeat(20, 1fr); 
         grid-gap: 5px; 
     }
 
     .shape {
-        width: 25px; 
-        height: 25px;
+        width: 100%; 
+        height: 100%; 
     }
 
     .volume-display,
     .click-counter,
-    .congrats-message {
+    .congrats-message,
+    .description-box {
         font-size: 1.2em; 
         padding: 10px; 
     }
